@@ -4,9 +4,11 @@
 
 ex:Elrond a schema:Person ;
     rdfs:label "Elrond"@en ;
+    schema:gender "Male" ;
     schema:jobTitle "Lord of Rivendell" ;
-    schema:location "Rivendell" ;
+    schema:location "Mouths of Sirion (before {{FA|590}}), Lindon, Rivendell, Aman (after {{TA|3021}})" ;
+    schema:memberOf "White Council" ;
     schema:name "Elrond" ;
     schema:sameAs <https://tolkiengateway.net/wiki/Elrond> ;
-    schema:species "Half-elf" .
+    schema:species "Half-elven|Half-elf" .
 
