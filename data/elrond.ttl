@@ -1,0 +1,12 @@
+@prefix ex: <http://example.org/tolkien/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+ex:Elrond a schema:Person ;
+    rdfs:label "Elrond"@en ;
+    schema:jobTitle "Lord of Rivendell" ;
+    schema:location "Rivendell" ;
+    schema:name "Elrond" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Elrond> ;
+    schema:species "Half-elf" .
+
