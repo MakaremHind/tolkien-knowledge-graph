@@ -1,46 +1,48 @@
-from rdflib import Graph, Namespace, URIRef, Literal
-from rdflib.namespace import RDF, RDFS
-from infobox_mapping import INFOBOX_TO_RDF, SCHEMA
+from urllib.parse import quote
 
-EX = Namespace("http://example.org/tolkien/")
+from infobox_mapping import FIELD_MAPPING
 
-def character_infobox_to_rdf(page_title: str, infobox: dict) -> Graph:
+
+def safe_uri(name: str) -> str:
     """
-    Generate an RDF graph for a Tolkien character from its infobox dictionary.
+    Turn a page title into a safe URI fragment.
     """
-    g = Graph()
-    g.bind("schema", SCHEMA)
-    g.bind("ex", EX)
+    return quote(name.replace(" ", "_"))
 
-    subject = URIRef(EX[page_title.replace(" ", "_")])
 
-    # Basic typing
-    g.add((subject, RDF.type, SCHEMA.Person))
-    g.add((subject, RDFS.label, Literal(page_title, lang="en")))
+def character_to_rdf(title: str, infobox: dict) -> str:
+    """
+    Convert a character infobox dictionary to Turtle RDF.
+    Returns a Turtle string (without prefixes).
+    """
+    subject = f"ex:{safe_uri(title)}"
 
-    # Link to original wiki page
-    g.add((
-        subject,
-        SCHEMA.sameAs,
-        URIRef(f"https://tolkiengateway.net/wiki/{page_title.replace(' ', '_')}")
-    ))
+    lines = [f"{subject} a schema:Person ;"]
+    lines.append(f'    rdfs:label "{title}"@en ;')
+    lines.append(f'    schema:name "{title}" ;')
+    lines.append(f"    schema:sameAs <https://tolkiengateway.net/wiki/{safe_uri(title)}> ;")
 
-    # Process infobox fields
-    for field, value in infobox.items():
-        if field not in INFOBOX_TO_RDF:
+    for field, predicate in FIELD_MAPPING.items():
+        if field not in infobox:
             continue
 
-        predicate = INFOBOX_TO_RDF[field]
+        value = infobox[field]
+        value = value.replace('"', '\\"')
 
-        # Simple cleanup (we improve this later)
-        clean_value = (
-            value.replace("[[", "")
-                 .replace("]]", "")
-                 .replace("<br/>", ", ")
-                 .strip()
-        )
+        lines.append(f'    {predicate} "{value}" ;')
 
-        if clean_value:
-            g.add((subject, predicate, Literal(clean_value)))
+    # Replace last semicolon with a dot
+    lines[-1] = lines[-1].rstrip(" ;") + " ."
 
-    return g
+    return "\n".join(lines)
+
+
+# Optional standalone test
+if __name__ == "__main__":
+    sample = {
+        "gender": "Male",
+        "species": "Half-elf",
+        "location": "Rivendell"
+    }
+
+    print(character_to_rdf("Elrond", sample))

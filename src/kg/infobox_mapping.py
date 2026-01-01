@@ -2,7 +2,7 @@ from rdflib import Namespace
 
 SCHEMA = Namespace("https://schema.org/")
 
-INFOBOX_TO_RDF = {
+FIELD_MAPPING = {
     "name": SCHEMA.name,
     "titles": SCHEMA.jobTitle,
     "people": SCHEMA.species,

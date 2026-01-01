@@ -1,17 +1,33 @@
-def load_infobox_dict(path="data/elrond_infobox.txt"):
-    infobox = {}
+def infobox_to_dict(infobox_text: str) -> dict:
+    """
+    Converts raw infobox text into a Python dictionary.
+    """
+    data = {}
 
-    with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line.startswith("|") and "=" in line:
-                key, value = line[1:].split("=", 1)
-                infobox[key.strip()] = value.strip()
+    for line in infobox_text.splitlines():
+        line = line.strip()
 
-    return infobox
+        if not line or line.startswith("|") is False:
+            continue
+
+        # remove leading |
+        line = line[1:]
+
+        if "=" not in line:
+            continue
+
+        key, value = line.split("=", 1)
+        data[key.strip()] = value.strip()
+
+    return data
 
 
+# Optional standalone test
 if __name__ == "__main__":
-    box = load_infobox_dict()
-    for k, v in box.items():
+    with open("data/elrond_infobox.txt", encoding="utf-8") as f:
+        infobox = f.read()
+
+    d = infobox_to_dict(infobox)
+
+    for k, v in d.items():
         print(f"{k}: {v}")

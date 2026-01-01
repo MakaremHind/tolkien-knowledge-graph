@@ -1,0 +1,235 @@
+@prefix ex: <http://example.org/tolkien/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+ex:Adalbert_Bolger a schema:Person ;
+    rdfs:label "Adalbert Bolger"@en ;
+    schema:name "Adalbert Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalbert_Bolger> ;
+    https://schema.org/name "Adalbert Bolger" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Budgeford]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Adaldrida_Bolger a schema:Person ;
+    rdfs:label "Adaldrida Bolger"@en ;
+    schema:name "Adaldrida Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adaldrida_Bolger> ;
+    https://schema.org/name "Adaldrida Bolger" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Female" ;
+    https://schema.org/location "[[Buckland]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Adalgar_Bolger a schema:Person ;
+    rdfs:label "Adalgar Bolger"@en ;
+    schema:name "Adalgar Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgar_Bolger> ;
+    https://schema.org/name "Adalgar Bolger" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Budgeford]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Adalgrim_Took a schema:Person ;
+    rdfs:label "Adalgrim Took"@en ;
+    schema:name "Adalgrim Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgrim_Took> ;
+    https://schema.org/name "Adalgrim Took" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Great Smials]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Adam_Hornblower a schema:Person ;
+    rdfs:label "Adam Hornblower"@en ;
+    schema:name "Adam Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adam_Hornblower> ;
+    https://schema.org/name "Adam Hornblower" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Hobbiton]]<ref>{{RS|Ancient}}</ref>" ;
+    https://schema.org/memberOf "" .
+
+ex:Adamanta_Chubb a schema:Person ;
+    rdfs:label "Adamanta Chubb"@en ;
+    schema:name "Adamanta Chubb" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adamanta_Chubb> ;
+    https://schema.org/name "Adamanta Chubb" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Female" ;
+    https://schema.org/location "[[Tookland]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Adelard_Took a schema:Person ;
+    rdfs:label "Adelard Took"@en ;
+    schema:name "Adelard Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adelard_Took> ;
+    https://schema.org/name "Adelard Took" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "" ;
+    https://schema.org/memberOf "" .
+
+ex:Adrahil a schema:Person ;
+    rdfs:label "Adrahil"@en ;
+    schema:name "Adrahil" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil> ;
+    https://schema.org/name "Adrahil" ;
+    https://schema.org/jobTitle "[[Princes of Dol Amroth|Prince of Dol Amroth]]" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "" ;
+    https://schema.org/memberOf "" .
+
+ex:Adrahil_%28Captain_of_the_Left_Wing%29 a schema:Person ;
+    rdfs:label "Adrahil (Captain of the Left Wing)"@en ;
+    schema:name "Adrahil (Captain of the Left Wing)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil_%28Captain_of_the_Left_Wing%29> ;
+    https://schema.org/name "Adrahil" ;
+    https://schema.org/jobTitle "Captain of the Left Wing<ref name=\"Cirion\">{{UT|Cirion}}</ref>" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Aglahad a schema:Person ;
+    rdfs:label "Aglahad"@en ;
+    schema:name "Aglahad" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aglahad> ;
+    https://schema.org/name "Aglahad" ;
+    https://schema.org/jobTitle "[[Princes of Dol Amroth|Prince of Dol Amroth]]" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Aldamir a schema:Person ;
+    rdfs:label "Aldamir"@en ;
+    schema:name "Aldamir" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldamir> ;
+    https://schema.org/name "Aldamir" ;
+    https://schema.org/jobTitle "[[Kings of Gondor|King of Gondor]]" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Aldor a schema:Person ;
+    rdfs:label "Aldor"@en ;
+    schema:name "Aldor" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldor> ;
+    https://schema.org/name "Aldor" ;
+    https://schema.org/jobTitle "[[Kings of Rohan|King of Rohan]]" ;
+    https://schema.org/species "[[Rohirrim|Rohir]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Rohan]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Alfrida_of_the_Yale a schema:Person ;
+    rdfs:label "Alfrida of the Yale"@en ;
+    schema:name "Alfrida of the Yale" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alfrida_of_the_Yale> ;
+    https://schema.org/name "Alfrida" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Female" ;
+    https://schema.org/location "[[The Yale]]<br/>[[Budgeford]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Alphros a schema:Person ;
+    rdfs:label "Alphros"@en ;
+    schema:name "Alphros" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alphros> ;
+    https://schema.org/name "Alphros" ;
+    https://schema.org/jobTitle "[[Princes of Dol Amroth|Prince of Dol Amroth]]" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Amaranth_Brandybuck a schema:Person ;
+    rdfs:label "Amaranth Brandybuck"@en ;
+    schema:name "Amaranth Brandybuck" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amaranth_Brandybuck> ;
+    https://schema.org/name "Amaranth Brandybuck" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Female" ;
+    https://schema.org/location "[[Buckland]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Amethyst_Hornblower a schema:Person ;
+    rdfs:label "Amethyst Hornblower"@en ;
+    schema:name "Amethyst Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amethyst_Hornblower> ;
+    https://schema.org/name "Amethyst Hornblower" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Hobbits|Hobbit]]" ;
+    https://schema.org/gender "Female" ;
+    https://schema.org/location "[[Budgeford]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Amlaith a schema:Person ;
+    rdfs:label "Amlaith"@en ;
+    schema:name "Amlaith" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amlaith> ;
+    https://schema.org/name "Amlaith" ;
+    https://schema.org/jobTitle "[[King of Arthedain]]" ;
+    https://schema.org/species "[[Arnor]]ian" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Arthedain]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Amroth a schema:Person ;
+    rdfs:label "Amroth"@en ;
+    schema:name "Amroth" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amroth> ;
+    https://schema.org/name "Amroth" ;
+    https://schema.org/jobTitle "[[King of Lórien]]" ;
+    https://schema.org/species "[[Sindar|Sinda]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Lothlórien]], [[Edhellond]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Amrothos a schema:Person ;
+    rdfs:label "Amrothos"@en ;
+    schema:name "Amrothos" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amrothos> ;
+    https://schema.org/name "Amrothos" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
+ex:Anar_%28dwarf%29 a schema:Person ;
+    rdfs:label "Anar (dwarf)"@en ;
+    schema:name "Anar (dwarf)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anar_%28dwarf%29> ;
+    https://schema.org/name "Anar" ;
+    https://schema.org/jobTitle "" ;
+    https://schema.org/species "[[Dwarves|Dwarf]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "" ;
+    https://schema.org/memberOf "" .
+
+ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
+    rdfs:label "Anardil (King of Gondor)"@en ;
+    schema:name "Anardil (King of Gondor)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anardil_%28King_of_Gondor%29> ;
+    https://schema.org/name "Anardil" ;
+    https://schema.org/jobTitle "[[Kings of Gondor|King of Gondor]]" ;
+    https://schema.org/species "[[Gondorians|Gondorian]]" ;
+    https://schema.org/gender "Male" ;
+    https://schema.org/location "[[Gondor]]" ;
+    https://schema.org/memberOf "" .
+
