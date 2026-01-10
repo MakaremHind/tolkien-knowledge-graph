@@ -1,34 +1,34 @@
 import re
 
 
-def extract_infobox(wikitext: str) -> str | None:
+def extract_infobox(wikitext: str, template_name: str) -> str | None:
     """
-    Extracts the {{Infobox character ...}} template from wikitext.
-    Returns the raw infobox text (without outer braces), or None if not found.
+    Extracts a given infobox template from wikitext.
+
+    Example template_name:
+    - "Infobox character"
+    - "Location infobox"
     """
 
+    # Match {{Template name | ... }}
     pattern = re.compile(
-        r"\{\{\s*Infobox character\s*(.*?)\n\}\}",
-        re.DOTALL | re.IGNORECASE
+        r"\{\{\s*" + re.escape(template_name) + r"\s*\|",
+        re.IGNORECASE
     )
 
     match = pattern.search(wikitext)
     if not match:
         return None
 
-    return match.group(1)
+    start = match.start()
+    depth = 0
 
+    for i in range(start, len(wikitext)):
+        if wikitext[i:i+2] == "{{":
+            depth += 1
+        elif wikitext[i:i+2] == "}}":
+            depth -= 1
+            if depth == 0:
+                return wikitext[start:i+2]
 
-# Optional standalone test
-if __name__ == "__main__":
-    with open("data/elrond.wikitext", encoding="utf-8") as f:
-        text = f.read()
-
-    infobox = extract_infobox(text)
-
-    if infobox:
-        with open("data/elrond_infobox.txt", "w", encoding="utf-8") as out:
-            out.write(infobox)
-        print("Infobox extracted to data/elrond_infobox.txt")
-    else:
-        print("No infobox found")
+    return None

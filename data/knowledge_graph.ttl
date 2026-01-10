@@ -1,0 +1,178 @@
+@prefix ex: <http://example.org/tolkien/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+ex:Adalbert_Bolger a schema:Person ;
+    rdfs:label "Adalbert Bolger"@en ;
+    schema:name "Adalbert Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalbert_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Budgeford" .
+
+ex:Adaldrida_Bolger a schema:Person ;
+    rdfs:label "Adaldrida Bolger"@en ;
+    schema:name "Adaldrida Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adaldrida_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Buckland" .
+
+ex:Adalgar_Bolger a schema:Person ;
+    rdfs:label "Adalgar Bolger"@en ;
+    schema:name "Adalgar Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgar_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Budgeford" .
+
+ex:Adalgrim_Took a schema:Person ;
+    rdfs:label "Adalgrim Took"@en ;
+    schema:name "Adalgrim Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgrim_Took> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Great Smials" .
+
+ex:Adam_Hornblower a schema:Person ;
+    rdfs:label "Adam Hornblower"@en ;
+    schema:name "Adam Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adam_Hornblower> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Hobbiton" .
+
+ex:Adamanta_Chubb a schema:Person ;
+    rdfs:label "Adamanta Chubb"@en ;
+    schema:name "Adamanta Chubb" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adamanta_Chubb> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Tookland" .
+
+ex:Adelard_Took a schema:Person ;
+    rdfs:label "Adelard Took"@en ;
+    schema:name "Adelard Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adelard_Took> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" .
+
+ex:Adrahil a schema:Person ;
+    rdfs:label "Adrahil"@en ;
+    schema:name "Adrahil" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" .
+
+ex:Adrahil_%28Captain_of_the_Left_Wing%29 a schema:Person ;
+    rdfs:label "Adrahil (Captain of the Left Wing)"@en ;
+    schema:name "Adrahil (Captain of the Left Wing)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil_%28Captain_of_the_Left_Wing%29> ;
+    schema:jobTitle "Captain of the Left Wing" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aglahad a schema:Person ;
+    rdfs:label "Aglahad"@en ;
+    schema:name "Aglahad" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aglahad> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aldamir a schema:Person ;
+    rdfs:label "Aldamir"@en ;
+    schema:name "Aldamir" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldamir> ;
+    schema:jobTitle "King of Gondor" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aldor a schema:Person ;
+    rdfs:label "Aldor"@en ;
+    schema:name "Aldor" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldor> ;
+    schema:jobTitle "King of Rohan" ;
+    schema:species "Rohir" ;
+    schema:gender "Male" ;
+    schema:location "Rohan" .
+
+ex:Alfrida_of_the_Yale a schema:Person ;
+    rdfs:label "Alfrida of the Yale"@en ;
+    schema:name "Alfrida of the Yale" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alfrida_of_the_Yale> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "The Yale<br/>Budgeford" .
+
+ex:Alphros a schema:Person ;
+    rdfs:label "Alphros"@en ;
+    schema:name "Alphros" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alphros> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Amaranth_Brandybuck a schema:Person ;
+    rdfs:label "Amaranth Brandybuck"@en ;
+    schema:name "Amaranth Brandybuck" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amaranth_Brandybuck> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Buckland" .
+
+ex:Amethyst_Hornblower a schema:Person ;
+    rdfs:label "Amethyst Hornblower"@en ;
+    schema:name "Amethyst Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amethyst_Hornblower> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Budgeford" .
+
+ex:Amlaith a schema:Person ;
+    rdfs:label "Amlaith"@en ;
+    schema:name "Amlaith" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amlaith> ;
+    schema:jobTitle "King of Arthedain" ;
+    schema:species "Arnorian" ;
+    schema:gender "Male" ;
+    schema:location "Arthedain" .
+
+ex:Amroth a schema:Person ;
+    rdfs:label "Amroth"@en ;
+    schema:name "Amroth" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amroth> ;
+    schema:jobTitle "King of Lórien" ;
+    schema:species "Sinda" ;
+    schema:gender "Male" ;
+    schema:location "Lothlórien, Edhellond" .
+
+ex:Amrothos a schema:Person ;
+    rdfs:label "Amrothos"@en ;
+    schema:name "Amrothos" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amrothos> ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Anar_%28dwarf%29 a schema:Person ;
+    rdfs:label "Anar (dwarf)"@en ;
+    schema:name "Anar (dwarf)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anar_%28dwarf%29> ;
+    schema:species "Dwarf" ;
+    schema:gender "Male" .
+
+ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
+    rdfs:label "Anardil (King of Gondor)"@en ;
+    schema:name "Anardil (King of Gondor)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anardil_%28King_of_Gondor%29> ;
+    schema:jobTitle "King of Gondor" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
