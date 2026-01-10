@@ -3,7 +3,8 @@ from pathlib import Path
 from fetch_elrond_wikitext import fetch_wikitext
 from parse_infobox import extract_infobox
 from infobox_to_dict import infobox_to_dict
-
+from infobox_mapping import FIELD_MAPPING as CHARACTER_MAPPING
+from infobox_actor_mapping import FIELD_MAPPING as ACTOR_MAPPING
 from character_to_rdf import character_to_rdf
 from place_to_rdf import place_infobox_to_rdf
 
@@ -29,9 +30,24 @@ PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
 # =========================
 
 TEMPLATES = [
-    ("Infobox character", character_to_rdf),
-    ("Location infobox", place_infobox_to_rdf),
+    (
+        "Infobox character",
+        lambda title, infobox: character_to_rdf(
+            title, infobox, CHARACTER_MAPPING
+        ),
+    ),
+    (
+        "Actor",
+        lambda title, infobox: character_to_rdf(
+            title, infobox, ACTOR_MAPPING
+        ),
+    ),
+    (
+        "Location infobox",
+        place_infobox_to_rdf,
+    ),
 ]
+
 
 
 

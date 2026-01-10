@@ -25,7 +25,7 @@ def clean_value(value: str) -> str:
     return value.strip()
 
 
-def character_to_rdf(title: str, infobox: dict) -> str:
+def character_to_rdf(title: str, infobox: dict, field_mapping: dict) -> str:
     """
     Convert a character infobox dictionary to Turtle RDF.
     Returns Turtle WITHOUT prefixes.
@@ -39,7 +39,7 @@ def character_to_rdf(title: str, infobox: dict) -> str:
         f"    schema:sameAs <https://tolkiengateway.net/wiki/{safe_uri(title)}> ;",
     ]
 
-    for field, predicate in FIELD_MAPPING.items():
+    for field, predicate in field_mapping.items():
         if field not in infobox:
             continue
 
