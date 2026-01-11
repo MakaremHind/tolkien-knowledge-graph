@@ -11,6 +11,7 @@ from actor_to_rdf import actor_infobox_to_rdf
 from author_to_rdf import author_to_rdf
 from person_to_rdf import person_to_rdf
 from organization_to_rdf import organization_infobox_to_rdf
+from film_to_rdf import film_to_rdf
 
 
 
@@ -24,6 +25,7 @@ PLACE_LIST = Path("data/places.txt")  # optional, can start with manual list
 OUT_FILE = Path("data/knowledge_graph.ttl")
 ACTOR_LIST = Path("data/actors.txt")
 ORGANIZATION_LIST = Path("data/organizations.txt")
+FILM_LIST = Path("data/films.txt")
 
 
 PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
@@ -46,6 +48,11 @@ TEMPLATES = [
             title, infobox, CHARACTER_MAPPING
         ),
     ),
+
+
+    # Films
+    ("film infobox", film_to_rdf),
+    ("Film infobox", film_to_rdf),
 
     # Real-world people
     ("Actor", actor_infobox_to_rdf),
@@ -131,6 +138,11 @@ def main():
         if CHARACTER_LIST.exists():
             print("=== Processing characters ===")
             process_list(CHARACTER_LIST, out)
+         
+        # Films   
+        if FILM_LIST.exists():
+            print("=== Processing films ===")
+            process_list(FILM_LIST, out)
 
         # Actors
         if ACTOR_LIST.exists():

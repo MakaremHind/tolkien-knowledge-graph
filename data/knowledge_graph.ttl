@@ -183,6 +183,80 @@ ex:Nils_Ivar_Agøy a schema:Person ;
     schema:jobTitle "Professor of Modern History" ;
     schema:location "Norway" .
 
+ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Fellowship of the Ring"@en ;
+    schema:name "The Lord of the Rings: The Fellowship of the Ring" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring> ;
+    schema:director "[[Peter Jackson]]" ;
+    schema:author "'''Book:'''<br>[[J.R.R. Tolkien]]<br>'''Screenplay:'''<br>[[Frances Walsh]]<br>[[Philippa Boyens]]<br>Peter Jackson<br>Stephen Sinclair" ;
+    schema:producer "Peter Jackson<br>[[Barrie M. Osborne]]<br>[[Tim Sanders]]<br>[[Fran Walsh]]" ;
+    schema:cinematography "[[Andrew Lesnie]]" ;
+    schema:editor "[[John Gilbert]]" ;
+    schema:musicBy "[[Howard Shore]]" ;
+    schema:productionCompany "[[WingNut Films]]<br>[[New Line Cinema]]" ;
+    schema:distributor "[[New Line Cinema]]" ;
+    schema:datePublished "[[December 19]]th, [[2001]]" ;
+    schema:duration "'''Theatrical:'''<br>178 min.<br>'''Extended Edition:'''<br>208 min." ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Lord_of_the_Rings%3A_The_Two_Towers a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Two Towers"@en ;
+    schema:name "The Lord of the Rings: The Two Towers" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Two_Towers> ;
+    schema:director "[[Peter Jackson]]" ;
+    schema:author "'''Book:'''<br>[[J.R.R. Tolkien]]<br>'''Screenplay:'''<br>[[Fran Walsh]]<br>[[Philippa Boyens]]<br>Peter Jackson" ;
+    schema:producer "Peter Jackson<br>Barrie M. Osborne<br>[[Fran Walsh]]" ;
+    schema:actor "see below" ;
+    schema:cinematography "[[Andrew Lesnie]]" ;
+    schema:editor "Michael J. Horton" ;
+    schema:musicBy "[[Howard Shore]]" ;
+    schema:productionCompany "[[WingNut Films]]<br>[[New Line Cinema]]" ;
+    schema:distributor "[[New Line Cinema]]" ;
+    schema:datePublished "[[December 18]], [[2002]]" ;
+    schema:duration "'''Theatrical:'''<br>179 min.<br>'''Extended Edition:'''<br>223 min." ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Return of the King"@en ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Return_of_the_King> ;
+    schema:director "[[Peter Jackson]]" ;
+    schema:author "'''Book:'''<br>[[J.R.R. Tolkien]]<br>'''Screenplay:'''<br>[[Fran Walsh]]<br>[[Philippa Boyens]]<br>Peter Jackson" ;
+    schema:producer "Peter Jackson<br>Barrie M. Osborne<br>[[Fran Walsh]]" ;
+    schema:actor "see below" ;
+    schema:cinematography "[[Andrew Lesnie]]" ;
+    schema:editor "Jamie Selkirk" ;
+    schema:musicBy "[[Howard Shore]]" ;
+    schema:productionCompany "[[WingNut Films]]<br>[[New Line Cinema]]" ;
+    schema:distributor "[[New Line Cinema]]" ;
+    schema:datePublished "[[17 December|December 17]], [[2003]]" ;
+    schema:duration "'''Theatrical:'''<br>200 min.<br>'''Extended Edition:'''<br>252 min." ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Hobbit%3A_An_Unexpected_Journey a schema:Movie ;
+    rdfs:label "The Hobbit: An Unexpected Journey"@en ;
+    schema:name "The Hobbit: An Unexpected Journey" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Hobbit%3A_An_Unexpected_Journey> ;
+    schema:director "[[Peter Jackson]]<ref name=\"HBTitles\">{{webcite|articleurl=http://www.thehobbitblog.com/?p=2563|articlename=Titles and Release Dates Announced|dated=31-May-2011|website=[http://www.thehobbitblog.com/ The Hobbit Blog]|accessed=21-Dec-2011}}</ref><br/>[[Andy Serkis]] (Second Unit Director)<ref name=\"HBAndy\">" ;
+    schema:author "'''Novels:'''<br>[[J.R.R. Tolkien]]<br>'''Screenplay:'''<br>[[Guillermo del Toro]]<br/>Peter Jackson<br/>Fran Walsh<br/>Philippa Boyens<ref name=\"HBTitles\"/>" ;
+    schema:producer "Peter Jackson<br/>[[Fran Walsh]]<br/>[[Carolynne Cunningham]]<br/>[[Philippa Boyens]] (Co-Producer)<br/>[[Ken Kamins]] (Executive Producer)<br/>[[Zane Weiner]] (Executive Producer)<ref name=\"HBTitles\"/>" ;
+    schema:actor "[[Ian McKellen]]<br/>[[Martin Freeman]]<br/>[[Richard Armitage]]<ref name=\"PJCasting1\">{{webcite|author=[[Peter Jackson]]|articleurl=http://www.facebook.com/note.php?note_id=10150168211921558|articlename=Production begins in New Zealand on The Hobbit|dated=20-March-2011|website=FB|accessed=21-Dec-2011}}</ref><br/>''[[#Cast|See cast section below for more]]''" ;
+    schema:cinematography "[[Andrew Lesnie]]<ref name=\"PJCasting1\"/>" ;
+    schema:editor "[[Jabez Olssen]]" ;
+    schema:musicBy "[[Howard Shore]]<ref name=\"PJCasting1\"/>" ;
+    schema:productionCompany "[[New Line Cinema]]<br/>[[MGM]]<br/>[[WingNut Films]]<ref name=\"HBTitles\"/>" ;
+    schema:distributor "[[Warner Bros.|Warner Bros. Pictures]]<ref name=\"HBTitles\"/>" ;
+    schema:datePublished "[[14 December]] [[2012]]<ref name=\"HBTitles2\">{{webcite|articleurl=http://www.thehobbitblog.com/the-hobbit-trilogy-titles-and-release-dates/|articlename=The Hobbit Trilogy titles and release dates|dated=2-September-2012|website=[http://www.thehobbitblog.com/ The Hobbit Blog]|accessed=2-September-2012}}</ref>" ;
+    schema:duration "'''Theatrical:'''<br>169 minutes<br>'''Extended Edition:'''<br>182 minutes" ;
+    schema:countryOfOrigin "[[New Zealand]]<br/>[[United Kingdom]]<br/>[[United States]]" ;
+    schema:inLanguage "English" .
+
 ex:Elijah_Wood a schema:Person ;
     rdfs:label "Elijah Wood"@en ;
     schema:name "Elijah Wood" ;
