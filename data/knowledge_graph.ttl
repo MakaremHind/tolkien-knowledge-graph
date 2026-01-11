@@ -180,7 +180,7 @@ ex:Elijah_Wood a schema:Person ;
     rdfs:label "Elijah Wood"@en ;
     schema:name "Elijah Wood" ;
     schema:sameAs <https://tolkiengateway.net/wiki/Elijah_Wood> ;
-    schema:characterName "Frodo" ;
-    schema:workPerformedIn "''The Lord of the Rings'' (film series)<br>''The Hobbit: An Unexpected Journey''" ;
-    schema:description "January 28, 1981" .
+    schema:characterName "[[Frodo Baggins|Frodo]]" ;
+    schema:workPerformedIn "[[The Lord of the Rings (film series)|''The Lord of the Rings'' (film series)]]<br>''[[The Hobbit: An Unexpected Journey]]''" ;
+    schema:description "[[28 January|January 28]], [[1981]]" .
 

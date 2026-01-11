@@ -8,6 +8,8 @@ from infobox_actor_mapping import FIELD_MAPPING as ACTOR_MAPPING
 from character_to_rdf import character_to_rdf
 from place_to_rdf import place_infobox_to_rdf
 from actor_to_rdf import actor_infobox_to_rdf
+from author_to_rdf import author_to_rdf
+
 
 
 # =========================
@@ -32,25 +34,28 @@ PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
 # =========================
 
 TEMPLATES = [
+    # Fictional characters
     (
         "Infobox character",
         lambda title, infobox: character_to_rdf(
             title, infobox, CHARACTER_MAPPING
         ),
     ),
-    (
-        "Actor",
-        lambda title, infobox: character_to_rdf(
-            title, infobox, ACTOR_MAPPING
-        ),
-    ),
+
+    # Real-world people
     ("Actor", actor_infobox_to_rdf),
-    (
-        "Location infobox",
-        place_infobox_to_rdf,
-    ),
-    
+
+    # Author (ALL known variants)
+    ("Author infobox", author_to_rdf),
+    ("Author_infobox", author_to_rdf),
+    ("author infobox", author_to_rdf),
+    ("author_infobox", author_to_rdf),
+
+    # Places
+    ("Location infobox", place_infobox_to_rdf),
 ]
+
+
 
 
 
@@ -72,7 +77,7 @@ def process_title(title: str) -> str | None:
             infobox = infobox_to_dict(infobox_text)
             return rdf_fn(title, infobox)
 
-    print(f"  ⚠ No supported infobox found for: {title}")
+    print(f" No supported infobox found for: {title}")
     return None
 
 
@@ -118,7 +123,7 @@ def main():
             print("=== Processing places ===")
             process_list(PLACE_LIST, out)
 
-    print(f"\n✔ Knowledge Graph written to {OUT_FILE}")
+    print(f"\nKnowledge Graph written to {OUT_FILE}")
 
 
 if __name__ == "__main__":
