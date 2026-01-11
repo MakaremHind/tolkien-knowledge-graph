@@ -1,0 +1,333 @@
+@prefix ex: <http://example.org/tolkien/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+ex:Adalbert_Bolger a schema:Person ;
+    rdfs:label "Adalbert Bolger"@en ;
+    schema:name "Adalbert Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalbert_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Budgeford" .
+
+ex:Adaldrida_Bolger a schema:Person ;
+    rdfs:label "Adaldrida Bolger"@en ;
+    schema:name "Adaldrida Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adaldrida_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Buckland" .
+
+ex:Adalgar_Bolger a schema:Person ;
+    rdfs:label "Adalgar Bolger"@en ;
+    schema:name "Adalgar Bolger" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgar_Bolger> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Budgeford" .
+
+ex:Adalgrim_Took a schema:Person ;
+    rdfs:label "Adalgrim Took"@en ;
+    schema:name "Adalgrim Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adalgrim_Took> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Great Smials" .
+
+ex:Adam_Hornblower a schema:Person ;
+    rdfs:label "Adam Hornblower"@en ;
+    schema:name "Adam Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adam_Hornblower> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" ;
+    schema:location "Hobbiton" .
+
+ex:Adamanta_Chubb a schema:Person ;
+    rdfs:label "Adamanta Chubb"@en ;
+    schema:name "Adamanta Chubb" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adamanta_Chubb> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Tookland" .
+
+ex:Adelard_Took a schema:Person ;
+    rdfs:label "Adelard Took"@en ;
+    schema:name "Adelard Took" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adelard_Took> ;
+    schema:species "Hobbit" ;
+    schema:gender "Male" .
+
+ex:Adrahil a schema:Person ;
+    rdfs:label "Adrahil"@en ;
+    schema:name "Adrahil" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" .
+
+ex:Adrahil_%28Captain_of_the_Left_Wing%29 a schema:Person ;
+    rdfs:label "Adrahil (Captain of the Left Wing)"@en ;
+    schema:name "Adrahil (Captain of the Left Wing)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Adrahil_%28Captain_of_the_Left_Wing%29> ;
+    schema:jobTitle "Captain of the Left Wing" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aglahad a schema:Person ;
+    rdfs:label "Aglahad"@en ;
+    schema:name "Aglahad" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aglahad> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aldamir a schema:Person ;
+    rdfs:label "Aldamir"@en ;
+    schema:name "Aldamir" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldamir> ;
+    schema:jobTitle "King of Gondor" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Aldor a schema:Person ;
+    rdfs:label "Aldor"@en ;
+    schema:name "Aldor" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Aldor> ;
+    schema:jobTitle "King of Rohan" ;
+    schema:species "Rohir" ;
+    schema:gender "Male" ;
+    schema:location "Rohan" .
+
+ex:Alfrida_of_the_Yale a schema:Person ;
+    rdfs:label "Alfrida of the Yale"@en ;
+    schema:name "Alfrida of the Yale" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alfrida_of_the_Yale> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "The Yale Budgeford" .
+
+ex:Alphros a schema:Person ;
+    rdfs:label "Alphros"@en ;
+    schema:name "Alphros" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Alphros> ;
+    schema:jobTitle "Prince of Dol Amroth" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Amaranth_Brandybuck a schema:Person ;
+    rdfs:label "Amaranth Brandybuck"@en ;
+    schema:name "Amaranth Brandybuck" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amaranth_Brandybuck> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Buckland" .
+
+ex:Amethyst_Hornblower a schema:Person ;
+    rdfs:label "Amethyst Hornblower"@en ;
+    schema:name "Amethyst Hornblower" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amethyst_Hornblower> ;
+    schema:species "Hobbit" ;
+    schema:gender "Female" ;
+    schema:location "Budgeford" .
+
+ex:Amlaith a schema:Person ;
+    rdfs:label "Amlaith"@en ;
+    schema:name "Amlaith" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amlaith> ;
+    schema:jobTitle "King of Arthedain" ;
+    schema:species "Arnorian" ;
+    schema:gender "Male" ;
+    schema:location "Arthedain" .
+
+ex:Amroth a schema:Person ;
+    rdfs:label "Amroth"@en ;
+    schema:name "Amroth" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amroth> ;
+    schema:jobTitle "King of Lórien" ;
+    schema:species "Sinda" ;
+    schema:gender "Male" ;
+    schema:location "Lothlórien, Edhellond" .
+
+ex:Amrothos a schema:Person ;
+    rdfs:label "Amrothos"@en ;
+    schema:name "Amrothos" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Amrothos> ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Anar_%28dwarf%29 a schema:Person ;
+    rdfs:label "Anar (dwarf)"@en ;
+    schema:name "Anar (dwarf)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anar_%28dwarf%29> ;
+    schema:species "Dwarf" ;
+    schema:gender "Male" .
+
+ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
+    rdfs:label "Anardil (King of Gondor)"@en ;
+    schema:name "Anardil (King of Gondor)" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Anardil_%28King_of_Gondor%29> ;
+    schema:jobTitle "King of Gondor" ;
+    schema:species "Gondorian" ;
+    schema:gender "Male" ;
+    schema:location "Gondor" .
+
+ex:Nils_Ivar_Agøy a schema:Person ;
+    rdfs:label "Nils Ivar Agøy"@en ;
+    schema:name "Nils Ivar Agøy" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Nils_Ivar_Agøy> ;
+    schema:jobTitle "Professor of Modern History" ;
+    schema:location "Norway" .
+
+ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Fellowship of the Ring"@en ;
+    schema:name "The Lord of the Rings: The Fellowship of the Ring" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring> ;
+    schema:director "Peter Jackson" ;
+    schema:author "Book: J.R.R. Tolkien Screenplay: Frances Walsh Philippa Boyens Peter Jackson Stephen Sinclair" ;
+    schema:producer "Peter Jackson Barrie M. Osborne Tim Sanders Fran Walsh" ;
+    schema:cinematography "Andrew Lesnie" ;
+    schema:editor "John Gilbert" ;
+    schema:musicBy "Howard Shore" ;
+    schema:productionCompany "WingNut Films New Line Cinema" ;
+    schema:distributor "New Line Cinema" ;
+    schema:datePublished "December 19th, 2001" ;
+    schema:duration "Theatrical: 178 min. Extended Edition: 208 min" ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Lord_of_the_Rings%3A_The_Two_Towers a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Two Towers"@en ;
+    schema:name "The Lord of the Rings: The Two Towers" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Two_Towers> ;
+    schema:director "Peter Jackson" ;
+    schema:author "Book: J.R.R. Tolkien Screenplay: Fran Walsh Philippa Boyens Peter Jackson" ;
+    schema:producer "Peter Jackson Barrie M. Osborne Fran Walsh" ;
+    schema:cinematography "Andrew Lesnie" ;
+    schema:editor "Michael J. Horton" ;
+    schema:musicBy "Howard Shore" ;
+    schema:productionCompany "WingNut Films New Line Cinema" ;
+    schema:distributor "New Line Cinema" ;
+    schema:datePublished "December 18, 2002" ;
+    schema:duration "Theatrical: 179 min. Extended Edition: 223 min" ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King a schema:Movie ;
+    rdfs:label "The Lord of the Rings: The Return of the King"@en ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings%3A_The_Return_of_the_King> ;
+    schema:director "Peter Jackson" ;
+    schema:author "Book: J.R.R. Tolkien Screenplay: Fran Walsh Philippa Boyens Peter Jackson" ;
+    schema:producer "Peter Jackson Barrie M. Osborne Fran Walsh" ;
+    schema:cinematography "Andrew Lesnie" ;
+    schema:editor "Jamie Selkirk" ;
+    schema:musicBy "Howard Shore" ;
+    schema:productionCompany "WingNut Films New Line Cinema" ;
+    schema:distributor "New Line Cinema" ;
+    schema:datePublished "December 17, 2003" ;
+    schema:duration "Theatrical: 200 min. Extended Edition: 252 min" ;
+    schema:countryOfOrigin "New Zealand & USA" ;
+    schema:inLanguage "English" ;
+    schema:budget "$94 million" .
+
+ex:The_Hobbit%3A_An_Unexpected_Journey a schema:Movie ;
+    rdfs:label "The Hobbit: An Unexpected Journey"@en ;
+    schema:name "The Hobbit: An Unexpected Journey" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Hobbit%3A_An_Unexpected_Journey> ;
+    schema:director "Peter Jackson Andy Serkis (Second Unit Director)" ;
+    schema:author "Novels: J.R.R. Tolkien Screenplay: Guillermo del Toro Peter Jackson Fran Walsh Philippa Boyens" ;
+    schema:producer "Peter Jackson Fran Walsh Carolynne Cunningham Philippa Boyens (Co-Producer) Ken Kamins (Executive Producer) Zane Weiner (Executive Producer)" ;
+    schema:actor "Ian McKellen Martin Freeman Richard Armitage See cast section below for more" ;
+    schema:cinematography "Andrew Lesnie" ;
+    schema:editor "Jabez Olssen" ;
+    schema:musicBy "Howard Shore" ;
+    schema:productionCompany "New Line Cinema MGM WingNut Films" ;
+    schema:distributor "Warner Bros. Pictures" ;
+    schema:datePublished "14 December 2012" ;
+    schema:duration "Theatrical: 169 minutes Extended Edition: 182 minutes" ;
+    schema:countryOfOrigin "New Zealand United Kingdom United States" ;
+    schema:inLanguage "English" .
+
+ex:The_Hobbit a schema:Book ;
+    rdfs:label "The Hobbit"@en ;
+    schema:name "The Hobbit" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Hobbit> ;
+    schema:author "J.R.R. Tolkien" ;
+    schema:illustrator "J.R.R. Tolkien" ;
+    schema:datePublished "21 September 1937" ;
+    schema:numberOfPages "312" ;
+    schema:hasPart "The Lord of the Rings (1954-55)" .
+
+ex:The_Lord_of_the_Rings a schema:Book ;
+    rdfs:label "The Lord of the Rings"@en ;
+    schema:name "The Lord of the Rings" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings> ;
+    schema:author "J.R.R. Tolkien" ;
+    schema:datePublished "1st edition: vol.1: 29 July 1954 vol.2: 11 November 1954 vol.3: 20 October 1955 2nd edition: 27 October 1966" ;
+    schema:numberOfPages "vol.1: 423 vol.2: 352 vol.3: 416" ;
+    schema:isBasedOn "The Hobbit (1937)" ;
+    schema:hasPart "The Adventures of Tom Bombadil (1962)" .
+
+ex:The_Silmarillion a schema:Book ;
+    rdfs:label "The Silmarillion"@en ;
+    schema:name "The Silmarillion" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Silmarillion> ;
+    schema:author "J.R.R. Tolkien" ;
+    schema:editor "Christopher Tolkien" ;
+    schema:datePublished "15 September 1977" ;
+    schema:numberOfPages "365" ;
+    schema:isbn "0048231398" ;
+    schema:isBasedOn "Letters from Father Christmas (1976)" ;
+    schema:hasPart "The Inklings: C.S. Lewis, J.R.R. Tolkien, Charles Williams, and Their Friends (1978)" .
+
+ex:Unfinished_Tales a schema:Book ;
+    rdfs:label "Unfinished Tales"@en ;
+    schema:name "Unfinished Tales" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Unfinished_Tales> ;
+    schema:author "J.R.R. Tolkien" ;
+    schema:editor "Christopher Tolkien" ;
+    schema:datePublished "2 October 1980" ;
+    schema:numberOfPages "472" ;
+    schema:isbn "0048231797" ;
+    schema:isBasedOn "Pictures by J.R.R. Tolkien {1979)" ;
+    schema:hasPart "The Letters of J.R.R. Tolkien (1981)" .
+
+ex:The_Children_of_H%C3%BArin a schema:Book ;
+    rdfs:label "The Children of Húrin"@en ;
+    schema:name "The Children of Húrin" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Children_of_H%C3%BArin> ;
+    schema:author "J.R.R. Tolkien" ;
+    schema:editor "Christopher Tolkien" ;
+    schema:illustrator "Alan Lee" ;
+    schema:datePublished "17 April 2007" ;
+    schema:numberOfPages "320" ;
+    schema:isbn "0007246226" ;
+    schema:isBasedOn "The J.R.R. Tolkien Companion and Guide (2006)" ;
+    schema:hasPart "Tolkien On Fairy-stories (2008)" .
+
+ex:Elijah_Wood a schema:Person ;
+    rdfs:label "Elijah Wood"@en ;
+    schema:name "Elijah Wood" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Elijah_Wood> ;
+    schema:characterName "Frodo" ;
+    schema:workPerformedIn "The Lord of the Rings (film series) The Hobbit: An Unexpected Journey" ;
+    schema:description "January 28, 1981" .
+
+ex:King%27s_Men a schema:Organization ;
+    rdfs:label "King's Men"@en ;
+    schema:name "King's Men" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/King%27s_Men> ;
+    schema:alternateName "King's Folk, King's Party" ;
+    schema:foundingDate "c" ;
+    schema:description "Supporting the king. Later opposing the Ban of the Valar" ;
+    schema:member "Most later Kings of Númenor, Gimilkhâd" ;
+    schema:location "Númenor" ;
+    schema:knowsAbout "Bringing about the Downfall of Númenor" .
+
