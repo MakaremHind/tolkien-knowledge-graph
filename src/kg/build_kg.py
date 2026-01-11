@@ -12,6 +12,7 @@ from author_to_rdf import author_to_rdf
 from person_to_rdf import person_to_rdf
 from organization_to_rdf import organization_infobox_to_rdf
 from film_to_rdf import film_to_rdf
+from book_to_rdf import book_to_rdf
 
 
 
@@ -26,6 +27,7 @@ OUT_FILE = Path("data/knowledge_graph.ttl")
 ACTOR_LIST = Path("data/actors.txt")
 ORGANIZATION_LIST = Path("data/organizations.txt")
 FILM_LIST = Path("data/films.txt")
+BOOK_LIST = Path("data/books.txt")
 
 
 PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
@@ -53,6 +55,10 @@ TEMPLATES = [
     # Films
     ("film infobox", film_to_rdf),
     ("Film infobox", film_to_rdf),
+    
+    # Books
+    ("Book", book_to_rdf),
+
 
     # Real-world people
     ("Actor", actor_infobox_to_rdf),
@@ -94,7 +100,7 @@ def process_title(title: str) -> str | None:
         try:
             infobox_text = extract_infobox(wikitext, template_name)
         except Exception as e:
-            print(f"  ⚠ Skipping {title} due to infobox parse error")
+            print(f"  Skipping {title} due to infobox parse error")
             return None
 
         if infobox_text:
@@ -143,6 +149,11 @@ def main():
         if FILM_LIST.exists():
             print("=== Processing films ===")
             process_list(FILM_LIST, out)
+            
+        # Books
+        if BOOK_LIST.exists():
+            print("=== Processing books ===")
+            process_list(BOOK_LIST, out)
 
         # Actors
         if ACTOR_LIST.exists():

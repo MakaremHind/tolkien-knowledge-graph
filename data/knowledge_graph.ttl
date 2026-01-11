@@ -257,6 +257,69 @@ ex:The_Hobbit%3A_An_Unexpected_Journey a schema:Movie ;
     schema:countryOfOrigin "[[New Zealand]]<br/>[[United Kingdom]]<br/>[[United States]]" ;
     schema:inLanguage "English" .
 
+ex:The_Hobbit a schema:Book ;
+    rdfs:label "The Hobbit"@en ;
+    schema:name "The Hobbit" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Hobbit> ;
+    schema:name "The Hobbit,<br><small>or There and Back Again</small>" ;
+    schema:author "[[J.R.R. Tolkien]]" ;
+    schema:illustrator "J.R.R. Tolkien" ;
+    schema:datePublished "[[21 September]] [[1937]]" ;
+    schema:numberOfPages "312" ;
+    schema:hasPart "[[The Lord of the Rings]] (1954-55)" .
+
+ex:The_Lord_of_the_Rings a schema:Book ;
+    rdfs:label "The Lord of the Rings"@en ;
+    schema:name "The Lord of the Rings" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Lord_of_the_Rings> ;
+    schema:name "The Lord of the Rings" ;
+    schema:author "[[J.R.R. Tolkien]]" ;
+    schema:datePublished "1st edition:<br/>vol.1: [[29 July]] [[1954]]<br>vol.2: [[11 November]] [[1954]]<br>vol.3: [[20 October]] [[1955]]<br/>2nd edition:<br/>[[27 October]] [[1966]]" ;
+    schema:numberOfPages "vol.1: 423<br>vol.2: 352<br>vol.3: 416" ;
+    schema:isBasedOn "[[The Hobbit]] (1937)" ;
+    schema:hasPart "[[The Adventures of Tom Bombadil]] ([[1962]])" .
+
+ex:The_Silmarillion a schema:Book ;
+    rdfs:label "The Silmarillion"@en ;
+    schema:name "The Silmarillion" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Silmarillion> ;
+    schema:name "The Silmarillion" ;
+    schema:author "[[J.R.R. Tolkien]]" ;
+    schema:editor "[[Christopher Tolkien]]" ;
+    schema:datePublished "[[15 September]] [[1977]]" ;
+    schema:numberOfPages "365" ;
+    schema:isbn "0048231398" ;
+    schema:isBasedOn "[[Letters from Father Christmas]] (1976)" ;
+    schema:hasPart "[[The Inklings (book)|The Inklings: C.S. Lewis, J.R.R. Tolkien, Charles Williams, and Their Friends]] (1978)" .
+
+ex:Unfinished_Tales a schema:Book ;
+    rdfs:label "Unfinished Tales"@en ;
+    schema:name "Unfinished Tales" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Unfinished_Tales> ;
+    schema:name "Unfinished Tales<br/><small>of Númenor and Middle-earth</small>" ;
+    schema:author "[[J.R.R. Tolkien]]" ;
+    schema:editor "[[Christopher Tolkien]]" ;
+    schema:datePublished "[[2 October]] [[1980]]" ;
+    schema:datePublished "[[18 November]] 1980" ;
+    schema:numberOfPages "472" ;
+    schema:isbn "0048231797" ;
+    schema:isBasedOn "[[Pictures by J.R.R. Tolkien]] {1979)" ;
+    schema:hasPart "[[The Letters of J.R.R. Tolkien]] (1981)" .
+
+ex:The_Children_of_H%C3%BArin a schema:Book ;
+    rdfs:label "The Children of Húrin"@en ;
+    schema:name "The Children of Húrin" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/The_Children_of_H%C3%BArin> ;
+    schema:name "The Children of Húrin" ;
+    schema:author "[[J.R.R. Tolkien]]" ;
+    schema:editor "[[Christopher Tolkien]]" ;
+    schema:illustrator "[[Alan Lee]]" ;
+    schema:datePublished "[[17 April]] [[2007]]" ;
+    schema:numberOfPages "320" ;
+    schema:isbn "0007246226" ;
+    schema:isBasedOn "[[The J.R.R. Tolkien Companion and Guide]] (2006)" ;
+    schema:hasPart "[[Tolkien On Fairy-stories]] (2008)" .
+
 ex:Elijah_Wood a schema:Person ;
     rdfs:label "Elijah Wood"@en ;
     schema:name "Elijah Wood" ;
