@@ -3,13 +3,12 @@ from rdflib import Namespace
 SCHEMA = Namespace("https://schema.org/")
 
 FIELD_MAPPING = {
-    "name": SCHEMA.name,
-    "played": SCHEMA.characterName,
-    "played2": SCHEMA.characterName,
-    "played3": SCHEMA.characterName,
-    "film": SCHEMA.workPerformedIn,
-    "film2": SCHEMA.workPerformedIn,
-    "film3": SCHEMA.workPerformedIn,
-    "imdb": SCHEMA.sameAs,
-    "lifetime": SCHEMA.description
+    "played": "schema:characterName",
+    "played2": "schema:characterName",
+    "played3": "schema:characterName",
+    "film": "schema:workPerformedIn",
+    "film2": "schema:workPerformedIn",
+    "film3": "schema:workPerformedIn",
+    "lifetime": "schema:description",
 }
+

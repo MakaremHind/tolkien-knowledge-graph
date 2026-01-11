@@ -7,6 +7,7 @@ from infobox_mapping import FIELD_MAPPING as CHARACTER_MAPPING
 from infobox_actor_mapping import FIELD_MAPPING as ACTOR_MAPPING
 from character_to_rdf import character_to_rdf
 from place_to_rdf import place_infobox_to_rdf
+from actor_to_rdf import actor_infobox_to_rdf
 
 
 # =========================
@@ -16,6 +17,7 @@ from place_to_rdf import place_infobox_to_rdf
 CHARACTER_LIST = Path("data/third_age_characters.txt")
 PLACE_LIST = Path("data/places.txt")  # optional, can start with manual list
 OUT_FILE = Path("data/knowledge_graph.ttl")
+ACTOR_LIST = Path("data/actors.txt")
 
 PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -42,10 +44,12 @@ TEMPLATES = [
             title, infobox, ACTOR_MAPPING
         ),
     ),
+    ("Actor", actor_infobox_to_rdf),
     (
         "Location infobox",
         place_infobox_to_rdf,
     ),
+    
 ]
 
 
@@ -104,6 +108,10 @@ def main():
         if CHARACTER_LIST.exists():
             print("=== Processing characters ===")
             process_list(CHARACTER_LIST, out)
+        
+        if ACTOR_LIST.exists():
+            print("=== Processing actors ===")
+            process_list(ACTOR_LIST, out)
 
         # Places (optional)
         if PLACE_LIST.exists():

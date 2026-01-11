@@ -176,3 +176,11 @@ ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
     schema:gender "Male" ;
     schema:location "Gondor" .
 
+ex:Elijah_Wood a schema:Person ;
+    rdfs:label "Elijah Wood"@en ;
+    schema:name "Elijah Wood" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Elijah_Wood> ;
+    schema:characterName "Frodo" ;
+    schema:workPerformedIn "''The Lord of the Rings'' (film series)<br>''The Hobbit: An Unexpected Journey''" ;
+    schema:description "January 28, 1981" .
+
