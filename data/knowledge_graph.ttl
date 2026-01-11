@@ -9,6 +9,7 @@ ex:Adalbert_Bolger a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Male" ;
     schema:location "Budgeford" .
+ex:Adalbert_Bolger schema:sameAs ex:resource/Adalbert_Bolger .
 
 ex:Adaldrida_Bolger a schema:Person ;
     rdfs:label "Adaldrida Bolger"@en ;
@@ -17,6 +18,7 @@ ex:Adaldrida_Bolger a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Female" ;
     schema:location "Buckland" .
+ex:Adaldrida_Bolger schema:sameAs ex:resource/Adaldrida_Bolger .
 
 ex:Adalgar_Bolger a schema:Person ;
     rdfs:label "Adalgar Bolger"@en ;
@@ -25,6 +27,7 @@ ex:Adalgar_Bolger a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Male" ;
     schema:location "Budgeford" .
+ex:Adalgar_Bolger schema:sameAs ex:resource/Adalgar_Bolger .
 
 ex:Adalgrim_Took a schema:Person ;
     rdfs:label "Adalgrim Took"@en ;
@@ -33,6 +36,7 @@ ex:Adalgrim_Took a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Male" ;
     schema:location "Great Smials" .
+ex:Adalgrim_Took schema:sameAs ex:resource/Adalgrim_Took .
 
 ex:Adam_Hornblower a schema:Person ;
     rdfs:label "Adam Hornblower"@en ;
@@ -41,6 +45,7 @@ ex:Adam_Hornblower a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Male" ;
     schema:location "Hobbiton" .
+ex:Adam_Hornblower schema:sameAs ex:resource/Adam_Hornblower .
 
 ex:Adamanta_Chubb a schema:Person ;
     rdfs:label "Adamanta Chubb"@en ;
@@ -49,6 +54,7 @@ ex:Adamanta_Chubb a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Female" ;
     schema:location "Tookland" .
+ex:Adamanta_Chubb schema:sameAs ex:resource/Adamanta_Chubb .
 
 ex:Adelard_Took a schema:Person ;
     rdfs:label "Adelard Took"@en ;
@@ -56,6 +62,7 @@ ex:Adelard_Took a schema:Person ;
     schema:sameAs <https://tolkiengateway.net/wiki/Adelard_Took> ;
     schema:species "Hobbit" ;
     schema:gender "Male" .
+ex:Adelard_Took schema:sameAs ex:resource/Adelard_Took .
 
 ex:Adrahil a schema:Person ;
     rdfs:label "Adrahil"@en ;
@@ -64,6 +71,7 @@ ex:Adrahil a schema:Person ;
     schema:jobTitle "Prince of Dol Amroth" ;
     schema:species "Gondorian" ;
     schema:gender "Male" .
+ex:Adrahil schema:sameAs ex:resource/Adrahil .
 
 ex:Adrahil_%28Captain_of_the_Left_Wing%29 a schema:Person ;
     rdfs:label "Adrahil (Captain of the Left Wing)"@en ;
@@ -73,6 +81,7 @@ ex:Adrahil_%28Captain_of_the_Left_Wing%29 a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Adrahil_%28Captain_of_the_Left_Wing%29 schema:sameAs ex:resource/Adrahil_%28Captain_of_the_Left_Wing%29 .
 
 ex:Aglahad a schema:Person ;
     rdfs:label "Aglahad"@en ;
@@ -82,6 +91,7 @@ ex:Aglahad a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Aglahad schema:sameAs ex:resource/Aglahad .
 
 ex:Aldamir a schema:Person ;
     rdfs:label "Aldamir"@en ;
@@ -91,6 +101,7 @@ ex:Aldamir a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Aldamir schema:sameAs ex:resource/Aldamir .
 
 ex:Aldor a schema:Person ;
     rdfs:label "Aldor"@en ;
@@ -100,6 +111,7 @@ ex:Aldor a schema:Person ;
     schema:species "Rohir" ;
     schema:gender "Male" ;
     schema:location "Rohan" .
+ex:Aldor schema:sameAs ex:resource/Aldor .
 
 ex:Alfrida_of_the_Yale a schema:Person ;
     rdfs:label "Alfrida of the Yale"@en ;
@@ -108,6 +120,7 @@ ex:Alfrida_of_the_Yale a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Female" ;
     schema:location "The Yale<br/>Budgeford" .
+ex:Alfrida_of_the_Yale schema:sameAs ex:resource/Alfrida_of_the_Yale .
 
 ex:Alphros a schema:Person ;
     rdfs:label "Alphros"@en ;
@@ -117,6 +130,7 @@ ex:Alphros a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Alphros schema:sameAs ex:resource/Alphros .
 
 ex:Amaranth_Brandybuck a schema:Person ;
     rdfs:label "Amaranth Brandybuck"@en ;
@@ -125,6 +139,7 @@ ex:Amaranth_Brandybuck a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Female" ;
     schema:location "Buckland" .
+ex:Amaranth_Brandybuck schema:sameAs ex:resource/Amaranth_Brandybuck .
 
 ex:Amethyst_Hornblower a schema:Person ;
     rdfs:label "Amethyst Hornblower"@en ;
@@ -133,6 +148,7 @@ ex:Amethyst_Hornblower a schema:Person ;
     schema:species "Hobbit" ;
     schema:gender "Female" ;
     schema:location "Budgeford" .
+ex:Amethyst_Hornblower schema:sameAs ex:resource/Amethyst_Hornblower .
 
 ex:Amlaith a schema:Person ;
     rdfs:label "Amlaith"@en ;
@@ -142,6 +158,7 @@ ex:Amlaith a schema:Person ;
     schema:species "Arnorian" ;
     schema:gender "Male" ;
     schema:location "Arthedain" .
+ex:Amlaith schema:sameAs ex:resource/Amlaith .
 
 ex:Amroth a schema:Person ;
     rdfs:label "Amroth"@en ;
@@ -151,6 +168,7 @@ ex:Amroth a schema:Person ;
     schema:species "Sinda" ;
     schema:gender "Male" ;
     schema:location "Lothlórien, Edhellond" .
+ex:Amroth schema:sameAs ex:resource/Amroth .
 
 ex:Amrothos a schema:Person ;
     rdfs:label "Amrothos"@en ;
@@ -159,6 +177,7 @@ ex:Amrothos a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Amrothos schema:sameAs ex:resource/Amrothos .
 
 ex:Anar_%28dwarf%29 a schema:Person ;
     rdfs:label "Anar (dwarf)"@en ;
@@ -166,6 +185,7 @@ ex:Anar_%28dwarf%29 a schema:Person ;
     schema:sameAs <https://tolkiengateway.net/wiki/Anar_%28dwarf%29> ;
     schema:species "Dwarf" ;
     schema:gender "Male" .
+ex:Anar_%28dwarf%29 schema:sameAs ex:resource/Anar_%28dwarf%29 .
 
 ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
     rdfs:label "Anardil (King of Gondor)"@en ;
@@ -175,6 +195,7 @@ ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
     schema:species "Gondorian" ;
     schema:gender "Male" ;
     schema:location "Gondor" .
+ex:Anardil_%28King_of_Gondor%29 schema:sameAs ex:resource/Anardil_%28King_of_Gondor%29 .
 
 ex:Nils_Ivar_Agøy a schema:Person ;
     rdfs:label "Nils Ivar Agøy"@en ;
@@ -182,6 +203,7 @@ ex:Nils_Ivar_Agøy a schema:Person ;
     schema:sameAs <https://tolkiengateway.net/wiki/Nils_Ivar_Agøy> ;
     schema:jobTitle "Professor of Modern History" ;
     schema:location "Norway" .
+ex:Nils_Ivar_Ag%C3%B8y schema:sameAs ex:resource/Nils_Ivar_Ag%C3%B8y .
 
 ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring a schema:Movie ;
     rdfs:label "The Lord of the Rings: The Fellowship of the Ring"@en ;
@@ -200,6 +222,7 @@ ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring a schema:Movie ;
     schema:countryOfOrigin "New Zealand & USA" ;
     schema:inLanguage "English" ;
     schema:budget "$94 million" .
+ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring schema:sameAs ex:resource/The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring .
 
 ex:The_Lord_of_the_Rings%3A_The_Two_Towers a schema:Movie ;
     rdfs:label "The Lord of the Rings: The Two Towers"@en ;
@@ -219,6 +242,7 @@ ex:The_Lord_of_the_Rings%3A_The_Two_Towers a schema:Movie ;
     schema:countryOfOrigin "New Zealand & USA" ;
     schema:inLanguage "English" ;
     schema:budget "$94 million" .
+ex:The_Lord_of_the_Rings%3A_The_Two_Towers schema:sameAs ex:resource/The_Lord_of_the_Rings%3A_The_Two_Towers .
 
 ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King a schema:Movie ;
     rdfs:label "The Lord of the Rings: The Return of the King"@en ;
@@ -238,6 +262,7 @@ ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King a schema:Movie ;
     schema:countryOfOrigin "New Zealand & USA" ;
     schema:inLanguage "English" ;
     schema:budget "$94 million" .
+ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King schema:sameAs ex:resource/The_Lord_of_the_Rings%3A_The_Return_of_the_King .
 
 ex:The_Hobbit%3A_An_Unexpected_Journey a schema:Movie ;
     rdfs:label "The Hobbit: An Unexpected Journey"@en ;
@@ -256,6 +281,7 @@ ex:The_Hobbit%3A_An_Unexpected_Journey a schema:Movie ;
     schema:duration "'''Theatrical:'''<br>169 minutes<br>'''Extended Edition:'''<br>182 minutes" ;
     schema:countryOfOrigin "[[New Zealand]]<br/>[[United Kingdom]]<br/>[[United States]]" ;
     schema:inLanguage "English" .
+ex:The_Hobbit%3A_An_Unexpected_Journey schema:sameAs ex:resource/The_Hobbit%3A_An_Unexpected_Journey .
 
 ex:The_Hobbit a schema:Book ;
     rdfs:label "The Hobbit"@en ;
@@ -267,6 +293,7 @@ ex:The_Hobbit a schema:Book ;
     schema:datePublished "[[21 September]] [[1937]]" ;
     schema:numberOfPages "312" ;
     schema:hasPart "[[The Lord of the Rings]] (1954-55)" .
+ex:The_Hobbit schema:sameAs ex:resource/The_Hobbit .
 
 ex:The_Lord_of_the_Rings a schema:Book ;
     rdfs:label "The Lord of the Rings"@en ;
@@ -278,6 +305,7 @@ ex:The_Lord_of_the_Rings a schema:Book ;
     schema:numberOfPages "vol.1: 423<br>vol.2: 352<br>vol.3: 416" ;
     schema:isBasedOn "[[The Hobbit]] (1937)" ;
     schema:hasPart "[[The Adventures of Tom Bombadil]] ([[1962]])" .
+ex:The_Lord_of_the_Rings schema:sameAs ex:resource/The_Lord_of_the_Rings .
 
 ex:The_Silmarillion a schema:Book ;
     rdfs:label "The Silmarillion"@en ;
@@ -291,6 +319,7 @@ ex:The_Silmarillion a schema:Book ;
     schema:isbn "0048231398" ;
     schema:isBasedOn "[[Letters from Father Christmas]] (1976)" ;
     schema:hasPart "[[The Inklings (book)|The Inklings: C.S. Lewis, J.R.R. Tolkien, Charles Williams, and Their Friends]] (1978)" .
+ex:The_Silmarillion schema:sameAs ex:resource/The_Silmarillion .
 
 ex:Unfinished_Tales a schema:Book ;
     rdfs:label "Unfinished Tales"@en ;
@@ -305,6 +334,7 @@ ex:Unfinished_Tales a schema:Book ;
     schema:isbn "0048231797" ;
     schema:isBasedOn "[[Pictures by J.R.R. Tolkien]] {1979)" ;
     schema:hasPart "[[The Letters of J.R.R. Tolkien]] (1981)" .
+ex:Unfinished_Tales schema:sameAs ex:resource/Unfinished_Tales .
 
 ex:The_Children_of_H%C3%BArin a schema:Book ;
     rdfs:label "The Children of Húrin"@en ;
@@ -319,6 +349,7 @@ ex:The_Children_of_H%C3%BArin a schema:Book ;
     schema:isbn "0007246226" ;
     schema:isBasedOn "[[The J.R.R. Tolkien Companion and Guide]] (2006)" ;
     schema:hasPart "[[Tolkien On Fairy-stories]] (2008)" .
+ex:The_Children_of_H%C3%BArin schema:sameAs ex:resource/The_Children_of_H%C3%BArin .
 
 ex:Elijah_Wood a schema:Person ;
     rdfs:label "Elijah Wood"@en ;
@@ -327,6 +358,7 @@ ex:Elijah_Wood a schema:Person ;
     schema:characterName "[[Frodo Baggins|Frodo]]" ;
     schema:workPerformedIn "[[The Lord of the Rings (film series)|''The Lord of the Rings'' (film series)]]<br>''[[The Hobbit: An Unexpected Journey]]''" ;
     schema:description "[[28 January|January 28]], [[1981]]" .
+ex:Elijah_Wood schema:sameAs ex:resource/Elijah_Wood .
 
 ex:King%27s_Men a schema:Organization ;
     rdfs:label "King's Men"@en ;
@@ -340,4 +372,5 @@ ex:King%27s_Men a schema:Organization ;
     schema:location "[[Númenor]]" ;
     schema:dissolutionDate "{{SA|3319}}" ;
     schema:knowsAbout "Bringing about the [[Downfall of Númenor]]" .
+ex:King%27s_Men schema:sameAs ex:resource/King%27s_Men .
 
