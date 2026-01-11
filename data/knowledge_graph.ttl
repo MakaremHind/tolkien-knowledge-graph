@@ -176,6 +176,13 @@ ex:Anardil_%28King_of_Gondor%29 a schema:Person ;
     schema:gender "Male" ;
     schema:location "Gondor" .
 
+ex:Nils_Ivar_Agøy a schema:Person ;
+    rdfs:label "Nils Ivar Agøy"@en ;
+    schema:name "Nils Ivar Agøy" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/Nils_Ivar_Agøy> ;
+    schema:jobTitle "Professor of Modern History" ;
+    schema:location "Norway" .
+
 ex:Elijah_Wood a schema:Person ;
     rdfs:label "Elijah Wood"@en ;
     schema:name "Elijah Wood" ;

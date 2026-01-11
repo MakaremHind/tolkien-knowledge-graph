@@ -9,6 +9,7 @@ from character_to_rdf import character_to_rdf
 from place_to_rdf import place_infobox_to_rdf
 from actor_to_rdf import actor_infobox_to_rdf
 from author_to_rdf import author_to_rdf
+from person_to_rdf import person_to_rdf
 
 
 
@@ -44,6 +45,7 @@ TEMPLATES = [
 
     # Real-world people
     ("Actor", actor_infobox_to_rdf),
+    ("Person infobox", person_to_rdf),
 
     # Author (ALL known variants)
     ("Author infobox", author_to_rdf),
