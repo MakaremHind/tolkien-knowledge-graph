@@ -10,6 +10,8 @@ from place_to_rdf import place_infobox_to_rdf
 from actor_to_rdf import actor_infobox_to_rdf
 from author_to_rdf import author_to_rdf
 from person_to_rdf import person_to_rdf
+from organization_to_rdf import organization_infobox_to_rdf
+
 
 
 
@@ -21,6 +23,8 @@ CHARACTER_LIST = Path("data/third_age_characters.txt")
 PLACE_LIST = Path("data/places.txt")  # optional, can start with manual list
 OUT_FILE = Path("data/knowledge_graph.ttl")
 ACTOR_LIST = Path("data/actors.txt")
+ORGANIZATION_LIST = Path("data/organizations.txt")
+
 
 PREFIXES = """@prefix ex: <http://example.org/tolkien/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -52,6 +56,16 @@ TEMPLATES = [
     ("Author_infobox", author_to_rdf),
     ("author infobox", author_to_rdf),
     ("author_infobox", author_to_rdf),
+    
+    # Organizations (ALL known variants)
+    ("Organization infobox", organization_infobox_to_rdf),
+    ("organization infobox", organization_infobox_to_rdf),
+    ("Infobox organization", organization_infobox_to_rdf),
+    ("infobox organization", organization_infobox_to_rdf),
+    ("Organisation infobox", organization_infobox_to_rdf),
+    ("Society infobox", organization_infobox_to_rdf),
+    ("Group infobox", organization_infobox_to_rdf),
+
 
     # Places
     ("Location infobox", place_infobox_to_rdf),
@@ -67,20 +81,22 @@ TEMPLATES = [
 # =========================
 
 def process_title(title: str) -> str | None:
-    """
-    Fetch a wiki page, detect supported infobox,
-    and return Turtle RDF string or None.
-    """
     wikitext = fetch_wikitext(title)
 
     for template_name, rdf_fn in TEMPLATES:
-        infobox_text = extract_infobox(wikitext, template_name)
+        try:
+            infobox_text = extract_infobox(wikitext, template_name)
+        except Exception as e:
+            print(f"  ⚠ Skipping {title} due to infobox parse error")
+            return None
+
         if infobox_text:
             infobox = infobox_to_dict(infobox_text)
             return rdf_fn(title, infobox)
 
     print(f" No supported infobox found for: {title}")
     return None
+
 
 
 def process_list(path: Path, out):
@@ -115,17 +131,24 @@ def main():
         if CHARACTER_LIST.exists():
             print("=== Processing characters ===")
             process_list(CHARACTER_LIST, out)
-        
+
+        # Actors
         if ACTOR_LIST.exists():
             print("=== Processing actors ===")
             process_list(ACTOR_LIST, out)
 
-        # Places (optional)
+        # Organizations
+        if ORGANIZATION_LIST.exists():
+            print("=== Processing organizations ===")
+            process_list(ORGANIZATION_LIST, out)
+
+        # Places
         if PLACE_LIST.exists():
             print("=== Processing places ===")
             process_list(PLACE_LIST, out)
 
     print(f"\nKnowledge Graph written to {OUT_FILE}")
+
 
 
 if __name__ == "__main__":

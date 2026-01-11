@@ -191,3 +191,16 @@ ex:Elijah_Wood a schema:Person ;
     schema:workPerformedIn "[[The Lord of the Rings (film series)|''The Lord of the Rings'' (film series)]]<br>''[[The Hobbit: An Unexpected Journey]]''" ;
     schema:description "[[28 January|January 28]], [[1981]]" .
 
+ex:King%27s_Men a schema:Organization ;
+    rdfs:label "King's Men"@en ;
+    schema:name "King's Men" ;
+    schema:sameAs <https://tolkiengateway.net/wiki/King%27s_Men> ;
+    schema:name "The King's Men" ;
+    schema:alternateName "King's Folk, King's Party" ;
+    schema:foundingDate "c. {{SA|2221}}" ;
+    schema:description "Supporting the king. Later opposing the [[Ban of the Valar]]" ;
+    schema:member "Most later [[King of Númenor|Kings of Númenor]], [[Gimilkhâd]]" ;
+    schema:location "[[Númenor]]" ;
+    schema:dissolutionDate "{{SA|3319}}" ;
+    schema:knowsAbout "Bringing about the [[Downfall of Númenor]]" .
+
