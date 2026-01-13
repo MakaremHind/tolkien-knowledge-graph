@@ -2,203 +2,198 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
+@prefix schema: <https://schema.org/> .
 @prefix ex: <http://example.org/tolkien/ontology#> .
 
+#################################################################
+# Fictional Characters (represented as schema:Person)
+#################################################################
 
 ex:FictionalCharacterShape
     a sh:NodeShape ;
+
+    sh:targetSubjectsOf schema:species ;
     sh:targetClass ex:FictionalCharacter ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message "A fictional character must have exactly one name."@en ;
-    ] ;
-
-    sh:property [
-        sh:path ex:gender ;
-        sh:datatype xsd:string ;
-        sh:maxCount 1 ;
-        sh:message "Gender must be a string."@en ;
-    ] ;
-
-    sh:property [
-        sh:path ex:species ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:message "Species is required for fictional characters."@en ;
-    ] ;
-
-    sh:property [
-        sh:path ex:location ;
-        sh:datatype xsd:string ;
-        sh:message "Location must be a string."@en ;
-    ] .
-
-ex:RealPersonShape
-    a sh:NodeShape ;
-    sh:targetClass ex:RealPerson ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-    ] ;
-
-    sh:property [
-        sh:path ex:birthDate ;
-        sh:datatype xsd:string ;
-        sh:maxCount 1 ;
-        sh:message "Birth date should be provided as a literal string."@en ;
-    ] ;
-
-    sh:property [
-        sh:path ex:gender ;
-        sh:datatype xsd:string ;
-    ] .
-
-ex:LiteraryWorkShape
-    a sh:NodeShape ;
-    sh:targetClass ex:LiteraryWork ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-    ] ;
-
-    sh:property [
-        sh:path ex:publicationDate ;
-        sh:datatype xsd:string ;
-    ] ;
-
-    sh:property [
-        sh:path ex:language ;
-        sh:datatype xsd:string ;
-    ] .
-
-ex:FilmAdaptationShape
-    a sh:NodeShape ;
-    sh:targetClass ex:FilmAdaptation ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-    ] ;
-
-    sh:property [
-        sh:path ex:budget ;
-        sh:datatype xsd:string ;
-    ] ;
-
-    sh:property [
-        sh:path ex:publicationDate ;
-        sh:datatype xsd:string ;
-    ] .
-
-ex:OrganizationInUniverseShape
-    a sh:NodeShape ;
-    sh:targetClass ex:OrganizationInUniverse ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-    ] ;
-
-    sh:property [
-        sh:path ex:description ;
-        sh:datatype xsd:string ;
-    ] .
-
-ex:WikiPageShape
-    a sh:NodeShape ;
-    sh:targetClass ex:WikiPage ;
-
-    sh:property [
-        sh:path ex:name ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-    ] ;
-
-    sh:property [
-        sh:path ex:about ;
-        sh:nodeKind sh:IRI ;
-        sh:minCount 1 ;
-        sh:message "A WikiPage must be about exactly one resource."@en ;
-    ] .
-
-ex:PlaceInMiddleEarthShape
-    a sh:NodeShape ;
-    sh:targetClass ex:PlaceInMiddleEarth ;
-
-    sh:property [
-        sh:path rdfs:label ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:description "Human-readable name of the place"@en ;
-    ] ;
 
     sh:property [
         sh:path schema:name ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
-        sh:description "Canonical name of the place"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:species ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "A fictional character must have a species."@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:gender ;
+        sh:datatype xsd:string ;
     ] ;
 
     sh:property [
         sh:path schema:location ;
         sh:datatype xsd:string ;
-        sh:minCount 0 ;
-        sh:description "Geographical or fictional location context"@en ;
-    ] ;
-
-    sh:property [
-        sh:path schema:containedInPlace ;
-        sh:class ex:PlaceInMiddleEarth ;
-        sh:minCount 0 ;
-        sh:description "Larger region containing this place"@en ;
-    ] ;
-
-    sh:property [
-        sh:path schema:sameAs ;
-        sh:nodeKind sh:IRI ;
-        sh:minCount 1 ;
-        sh:description "Link to corresponding Tolkien Gateway page"@en ;
     ] .
+
+
+
+#################################################################
+# Real-world Persons (actors, authors, scholars)
+#################################################################
+
+ex:RealPersonShape
+    a sh:NodeShape ;
+
+    sh:targetClass schema:Person ;
+    sh:targetClass ex:RealPerson ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:jobTitle ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:birthDate ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] .
+
+#################################################################
+# Literary Works (Books)
+#################################################################
+
+ex:LiteraryWorkShape
+    a sh:NodeShape ;
+
+    sh:targetClass schema:Book ;
+    sh:targetClass ex:LiteraryWork ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:author ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:datePublished ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:numberOfPages ;
+        sh:datatype xsd:string ;
+    ] .
+
+
+#################################################################
+# Film Adaptations
+#################################################################
+
+ex:FilmAdaptationShape
+    a sh:NodeShape ;
+
+    sh:targetClass schema:Movie ;
+    sh:targetClass ex:FilmAdaptation ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:director ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:datePublished ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:budget ;
+        sh:datatype xsd:string ;
+    ] .
+
+
+#################################################################
+# Organizations (in-universe or real)
+#################################################################
+
+ex:OrganizationInUniverseShape
+    a sh:NodeShape ;
+
+    sh:targetClass schema:Organization ;
+    sh:targetClass ex:OrganizationInUniverse ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path schema:alternateName ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:foundingDate ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:dissolutionDate ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path schema:description ;
+        sh:datatype xsd:string ;
+    ] .
+
+
+#################################################################
+# Conceptual Resources (abstract Tolkien concepts)
+#################################################################
 
 ex:ConceptResourceShape
     a sh:NodeShape ;
+
+    sh:targetClass schema:Thing ;
     sh:targetClass ex:ConceptResource ;
 
     sh:property [
         sh:path schema:name ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
-        sh:description "Name of the conceptual entity"@en ;
     ] ;
 
     sh:property [
         sh:path schema:description ;
         sh:datatype xsd:string ;
-        sh:minCount 0 ;
-        sh:description "Textual description of the concept"@en ;
     ] ;
 
     sh:property [
         sh:path schema:sameAs ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
-        sh:description "Reference to the corresponding wiki resource"@en ;
-    ] ;
-
-    sh:property [
-        sh:path schema:subjectOf ;
-        sh:class ex:WikiPage ;
-        sh:minCount 1 ;
-        sh:description "Wiki page describing this concept"@en ;
     ] .
+
