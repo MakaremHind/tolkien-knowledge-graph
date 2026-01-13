@@ -171,3 +171,34 @@ ex:PlaceInMiddleEarthShape
         sh:description "Link to corresponding Tolkien Gateway page"@en ;
     ] .
 
+ex:ConceptResourceShape
+    a sh:NodeShape ;
+    sh:targetClass ex:ConceptResource ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:description "Name of the conceptual entity"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:description "Textual description of the concept"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:sameAs ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:description "Reference to the corresponding wiki resource"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:subjectOf ;
+        sh:class ex:WikiPage ;
+        sh:minCount 1 ;
+        sh:description "Wiki page describing this concept"@en ;
+    ] .
