@@ -38,3 +38,24 @@ ex:FictionalCharacterShape
         sh:message "Location must be a string."@en ;
     ] .
 
+ex:RealPersonShape
+    a sh:NodeShape ;
+    sh:targetClass ex:RealPerson ;
+
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path ex:birthDate ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "Birth date should be provided as a literal string."@en ;
+    ] ;
+
+    sh:property [
+        sh:path ex:gender ;
+        sh:datatype xsd:string ;
+    ] .
