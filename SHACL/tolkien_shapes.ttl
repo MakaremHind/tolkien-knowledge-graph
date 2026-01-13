@@ -59,3 +59,23 @@ ex:RealPersonShape
         sh:path ex:gender ;
         sh:datatype xsd:string ;
     ] .
+
+ex:LiteraryWorkShape
+    a sh:NodeShape ;
+    sh:targetClass ex:LiteraryWork ;
+
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path ex:publicationDate ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path ex:language ;
+        sh:datatype xsd:string ;
+    ] .
