@@ -114,3 +114,20 @@ ex:OrganizationInUniverseShape
         sh:path ex:description ;
         sh:datatype xsd:string ;
     ] .
+
+ex:WikiPageShape
+    a sh:NodeShape ;
+    sh:targetClass ex:WikiPage ;
+
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path ex:about ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "A WikiPage must be about exactly one resource."@en ;
+    ] .
