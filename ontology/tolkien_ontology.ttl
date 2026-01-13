@@ -1,0 +1,303 @@
+@prefix : <http://www.semanticweb.org/hindm/ontologies/2026/0/untitled-ontology-31/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/hindm/ontologies/2026/0/untitled-ontology-31/> .
+
+<http://example.org/tolkien/ontology#> rdf:type owl:Ontology ;
+                                        owl:imports <https://schema.org/version/latest/schemaorg-current-https.ttl> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#adaptedFrom
+<http://purl.obolibrary.org/obo/IAO_0000003#adaptedFrom> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FilmAdaptation> ;
+                                                         rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> ;
+                                                         rdfs:label "Gibt an, dass ein Film aus einem literarischen Werk adaptiert wurde"@de ,
+                                                                    "Indicates that a film is adapted from a literary work"@en ,
+                                                                    "Indique qu’un film est adapté d’une œuvre littéraire"@fr ,
+                                                                    "adapted from"@en ,
+                                                                    "adaptiert von"@de ,
+                                                                    "adapté de"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#appearsIn
+<http://purl.obolibrary.org/obo/IAO_0000003#appearsIn> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter> ;
+                                                       rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> ;
+                                                       rdfs:comment "Relates a fictional character to a work in which it appears"@en ,
+                                                                    "Relie un personnage fictif à une œuvre dans laquelle il apparaît"@fr ,
+                                                                    "Verbindet eine fiktive Figur mit einem Werk, in dem sie erscheint"@de ;
+                                                       rdfs:label "apparaît dans"@fr ,
+                                                                  "appears in"@en ,
+                                                                  "erscheint in"@de .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#createdBy
+<http://purl.obolibrary.org/obo/IAO_0000003#createdBy> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FilmAdaptation> ,
+                                                                   <http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> ;
+                                                       rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#RealPerson> ;
+                                                       rdfs:comment "Relates a creative work to its creator"@en ,
+                                                                    "Relie une œuvre à son créateur"@fr ,
+                                                                    "Verbindet ein Werk mit seinem Urheber"@de ;
+                                                       rdfs:label "created by"@en ,
+                                                                  "créé par"@fr ,
+                                                                  "erstellt von"@de .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#describes
+<http://purl.obolibrary.org/obo/IAO_0000003#describes> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#WikiPage> ;
+                                                       rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#ConceptResource> ;
+                                                       rdfs:comment "Links a wiki page to the conceptual entity it describes"@en ,
+                                                                    "Relie une page wiki à l’entité conceptuelle qu’elle décrit"@fr ,
+                                                                    "Verbindet eine Wiki-Seite mit der konzeptuellen Entität, die sie beschreibt"@de ;
+                                                       rdfs:label "beschreibt"@de ,
+                                                                  "describes"@en ,
+                                                                  "décrit"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#locatedIn
+<http://purl.obolibrary.org/obo/IAO_0000003#locatedIn> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ;
+                                                       rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#PlaceInMiddleEarth> ;
+                                                       rdfs:label "Relates an entity to a location in Middle-earth"@en ,
+                                                                  "Relie une entité à un lieu de la Terre du Milieu"@fr ,
+                                                                  "Verbindet eine Entität mit einem Ort in Mittelerde"@de ,
+                                                                  "befindet sich in"@de ,
+                                                                  "located in"@en ,
+                                                                  "situé dans"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#memberOf
+<http://purl.obolibrary.org/obo/IAO_0000003#memberOf> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter> ;
+                                                      rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003#OrganizationInUniverse> ;
+                                                      rdfs:comment "Gibt an, dass eine fiktive Figur Mitglied einer Organisation ist"@de ,
+                                                                   "Indicates that a fictional character is a member of an organization"@en ,
+                                                                   "Indique qu’un personnage fictif est membre d’une organisation"@fr ;
+                                                      rdfs:label "Mitglied von"@de ,
+                                                                 "member of"@en ,
+                                                                 "membre de"@fr .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#birthDate
+<http://purl.obolibrary.org/obo/IAO_0000003#birthDate> rdf:type owl:DatatypeProperty ,
+                                                                owl:FunctionalProperty ;
+                                                       rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#RealPerson> ;
+                                                       rdfs:range xsd:date ;
+                                                       rdfs:comment "Das Geburtsdatum einer realen Person"@de ,
+                                                                    "La date de naissance d’une personne réelle"@fr ,
+                                                                    "The date of birth of a real person"@en ;
+                                                       rdfs:label "Geburtsdatum"@de ,
+                                                                  "birth date"@en ,
+                                                                  "date de naissance"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#budget
+<http://purl.obolibrary.org/obo/IAO_0000003#budget> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FilmAdaptation> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "Das Produktionsbudget eines Films"@de ,
+                                                                 "Le budget de production d’un film"@fr ,
+                                                                 "The production budget of a film"@en ;
+                                                    rdfs:label "Budget"@de ,
+                                                               "budget"@en ,
+                                                               "budget"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#description
+<http://purl.obolibrary.org/obo/IAO_0000003#description> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "A textual description of an entity"@en ,
+                                                                      "Eine textuelle Beschreibung einer Entität"@de ,
+                                                                      "Une description textuelle d’une entité"@fr ;
+                                                         rdfs:label "Beschreibung"@de ,
+                                                                    "description"@en ,
+                                                                    "description"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#gender
+<http://purl.obolibrary.org/obo/IAO_0000003#gender> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "Das Geschlecht einer Person"@de ,
+                                                                 "Le genre d’une personne"@fr ,
+                                                                 "The gender of a person"@en ;
+                                                    rdfs:label "Geschlecht"@de ,
+                                                               "gender"@en ,
+                                                               "genre"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#language
+<http://purl.obolibrary.org/obo/IAO_0000003#language> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "Die Sprache, in der ein Werk verfasst oder produziert ist"@de ,
+                                                                   "La langue dans laquelle une œuvre est écrite ou produite"@fr ,
+                                                                   "The language in which a work is written or produced"@en ;
+                                                      rdfs:label "Sprache"@de ,
+                                                                 "language"@en ,
+                                                                 "langue"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#name
+<http://purl.obolibrary.org/obo/IAO_0000003#name> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:comment "Der für Menschen lesbare Name einer Entität"@de ,
+                                                               "Le nom lisible par un humain d’une entité"@fr ,
+                                                               "The human-readable name of an entity"@en ;
+                                                  rdfs:label "Name"@de ,
+                                                             "name"@en ,
+                                                             "nom"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#publicationDate
+<http://purl.obolibrary.org/obo/IAO_0000003#publicationDate> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> ;
+                                                             rdfs:range xsd:date ;
+                                                             rdfs:comment "Das Veröffentlichungsdatum eines Werkes"@de ,
+                                                                          "La date de première publication ou diffusion d’une œuvre"@fr ,
+                                                                          "The date a work was first published or released"@en ;
+                                                             rdfs:label "Veröffentlichungsdatum"@de ,
+                                                                        "ate de publication"@fr ,
+                                                                        "publication date"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#species
+<http://purl.obolibrary.org/obo/IAO_0000003#species> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter> ;
+                                                     rdfs:range xsd:string ;
+                                                     rdfs:comment "Die fiktive Spezies einer Figur"@de ,
+                                                                  "L’espèce fictive d’un personnage"@fr ,
+                                                                  "The fictional species of a character"@en ;
+                                                     rdfs:label "Spezies"@de ,
+                                                                "espèce"@fr ,
+                                                                "species"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#ConceptResource
+<http://purl.obolibrary.org/obo/IAO_0000003#ConceptResource> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                             <https://schema.org/Thing> ;
+                                                             rdfs:comment "Abstraktes Konzept, unabhängig von seiner Webseite identifiziert"@de ,
+                                                                          "An abstract concept identified independently of its web page"@en ,
+                                                                          "Concept abstrait identifié indépendamment de sa page web"@fr ;
+                                                             rdfs:label "Concept resource"@en ,
+                                                                        "Konzeptuelle Ressource"@de ,
+                                                                        "Ressource conceptuelle"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter
+<http://purl.obolibrary.org/obo/IAO_0000003#FictionalCharacter> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                                <https://schema.org/Person> ;
+                                                                rdfs:comment "A fictional character appearing in Tolkien’s legendarium"@en ,
+                                                                             "Fiktive Figur aus Tolkiens Legendarium"@de ,
+                                                                             "Personnage fictif apparaissant dans le légendaire de Tolkien"@fr ;
+                                                                rdfs:label "Fictional character"@en ,
+                                                                           "Fiktive Figur"@de ,
+                                                                           "Personnage fictif"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#FilmAdaptation
+<http://purl.obolibrary.org/obo/IAO_0000003#FilmAdaptation> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                            <https://schema.org/Movie> ;
+                                                            rdfs:comment "A film adapting a literary work from Tolkien’s universe"@en ,
+                                                                         "Film adaptant une œuvre littéraire de l’univers de Tolkien"@fr ,
+                                                                         "Filmische Adaption eines literarischen Werks aus Tolkiens Universum"@de ;
+                                                            rdfs:label "Adaptation cinématographique"@fr ,
+                                                                       "Film adaptation"@en ,
+                                                                       "Filmadaption"@de .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork
+<http://purl.obolibrary.org/obo/IAO_0000003#LiteraryWork> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                          <https://schema.org/CreativeWork> .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#OrganizationInUniverse
+<http://purl.obolibrary.org/obo/IAO_0000003#OrganizationInUniverse> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                                    <https://ref.gs1.org/voc/Organization> ;
+                                                                    rdfs:comment "An organization or group existing within Tolkien’s fictional universe"@en ,
+                                                                                 "Organisation oder Gruppe innerhalb von Tolkiens fiktivem Universum"@de ,
+                                                                                 "Organisation ou groupe existant dans l’univers fictif de Tolkien"@fr ;
+                                                                    rdfs:label "Fictional organization"@en ,
+                                                                               "Fiktive Organisation"@de ,
+                                                                               "Organisation fictive"@fr .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#PlaceInMiddleEarth
+<http://purl.obolibrary.org/obo/IAO_0000003#PlaceInMiddleEarth> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ,
+                                                                                <https://schema.org/Place> ;
+                                                                rdfs:comment "A geographical location in Tolkien’s fictional world"@en ,
+                                                                             "Geografischer Ort in Tolkiens fiktiver Welt"@de ,
+                                                                             "Lieu géographique situé dans le monde fictif de Tolkien"@fr ;
+                                                                rdfs:label "Lieu de la Terre du Milieu"@fr ,
+                                                                           "Ort in Mittelerde"@de ,
+                                                                           "Place in Middle-earth"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#RealPerson
+<http://purl.obolibrary.org/obo/IAO_0000003#RealPerson> rdf:type owl:Class ;
+                                                        owl:equivalentClass <https://schema.org/Person> ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ;
+                                                        rdfs:comment "A real-world person related to Tolkien’s works or their adaptations"@en ,
+                                                                     "Personne réelle liée aux œuvres de Tolkien ou à leurs adaptations"@fr ,
+                                                                     "Reale Person, die mit Tolkiens Werken oder deren Adaptionen verbunden ist"@de ;
+                                                        rdfs:label "Personne réelle"@fr ,
+                                                                   "Real person"@en ,
+                                                                   "Reale Person"@de .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity
+<http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <https://schema.org/Thing> ;
+                                                           rdfs:comment "Any entity belonging to Tolkien’s fictional universe or to works, people, or organizations related to it"@en ,
+                                                                        "Jede Entität, die zum fiktiven Universum Tolkiens oder zu damit verbundenen Werken, Personen oder Organisationen gehört"@de ,
+                                                                        "Toute entité appartenant à l’univers fictif de Tolkien ou aux œuvres, personnes ou organisations qui y sont liées"@fr ;
+                                                           rdfs:label "Entité de Tolkien"@fr ,
+                                                                      "Tolkien entity"@en ,
+                                                                      "Tolkien-Entität"@de .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003#WikiPage
+<http://purl.obolibrary.org/obo/IAO_0000003#WikiPage> rdf:type owl:Class ;
+                                                      owl:equivalentClass <https://schema.org/WebPage> ;
+                                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003#TolkienEntity> ;
+                                                      rdfs:comment "A web page describing an entity on Tolkien Gateway"@en ,
+                                                                   "Page web décrivant une entité sur Tolkien Gateway"@fr ,
+                                                                   "Webseite, die eine Entität auf Tolkien Gateway beschreibt"@de ;
+                                                      rdfs:label "Page wiki"@fr ,
+                                                                 "Wiki page"@en ,
+                                                                 "Wiki-Seite"@de .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
