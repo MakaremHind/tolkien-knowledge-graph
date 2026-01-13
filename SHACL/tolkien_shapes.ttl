@@ -131,3 +131,43 @@ ex:WikiPageShape
         sh:minCount 1 ;
         sh:message "A WikiPage must be about exactly one resource."@en ;
     ] .
+
+ex:PlaceInMiddleEarthShape
+    a sh:NodeShape ;
+    sh:targetClass ex:PlaceInMiddleEarth ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:description "Human-readable name of the place"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:description "Canonical name of the place"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:location ;
+        sh:datatype xsd:string ;
+        sh:minCount 0 ;
+        sh:description "Geographical or fictional location context"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:containedInPlace ;
+        sh:class ex:PlaceInMiddleEarth ;
+        sh:minCount 0 ;
+        sh:description "Larger region containing this place"@en ;
+    ] ;
+
+    sh:property [
+        sh:path schema:sameAs ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:description "Link to corresponding Tolkien Gateway page"@en ;
+    ] .
+
