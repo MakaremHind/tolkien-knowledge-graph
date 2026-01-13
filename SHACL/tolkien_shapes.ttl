@@ -4,3 +4,37 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix ex: <http://example.org/tolkien/ontology#> .
+
+
+ex:FictionalCharacterShape
+    a sh:NodeShape ;
+    sh:targetClass ex:FictionalCharacter ;
+
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "A fictional character must have exactly one name."@en ;
+    ] ;
+
+    sh:property [
+        sh:path ex:gender ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:message "Gender must be a string."@en ;
+    ] ;
+
+    sh:property [
+        sh:path ex:species ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Species is required for fictional characters."@en ;
+    ] ;
+
+    sh:property [
+        sh:path ex:location ;
+        sh:datatype xsd:string ;
+        sh:message "Location must be a string."@en ;
+    ] .
+
