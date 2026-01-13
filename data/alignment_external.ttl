@@ -1,0 +1,67 @@
+@prefix ex: <http://example.org/tolkien/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Adrahil owl:sameAs <http://dbpedia.org/resource/Adrahil>,
+        <http://yago-knowledge.org/resource/Adrahil>,
+        <https://en.wikipedia.org/wiki/Adrahil> .
+
+ex:Aldor owl:sameAs <http://dbpedia.org/resource/Aldor>,
+        <http://yago-knowledge.org/resource/Aldor>,
+        <https://en.wikipedia.org/wiki/Aldor> .
+
+ex:Amroth owl:sameAs <http://dbpedia.org/resource/Amroth>,
+        <http://yago-knowledge.org/resource/Amroth>,
+        <https://en.wikipedia.org/wiki/Amroth> .
+
+ex:Amrothos owl:sameAs <http://dbpedia.org/resource/Amrothos>,
+        <http://yago-knowledge.org/resource/Amrothos>,
+        <https://en.wikipedia.org/wiki/Amrothos> .
+
+ex:Elijah_Wood owl:sameAs <http://dbpedia.org/resource/Elijah_Wood>,
+        <http://yago-knowledge.org/resource/Elijah_Wood>,
+        <https://en.wikipedia.org/wiki/Elijah_Wood> .
+
+ex:King%27s_Men owl:sameAs <http://dbpedia.org/resource/King's_Men>,
+        <http://yago-knowledge.org/resource/King's_Men>,
+        <https://en.wikipedia.org/wiki/King's_Men> .
+
+ex:Nils_Ivar_Agøy owl:sameAs <http://dbpedia.org/resource/Nils_Ivar_Agøy>,
+        <http://yago-knowledge.org/resource/Nils_Ivar_Agøy>,
+        <https://en.wikipedia.org/wiki/Nils_Ivar_Agøy> .
+
+ex:The_Children_of_H%C3%BArin owl:sameAs <http://dbpedia.org/resource/The_Children_of_Húrin>,
+        <http://yago-knowledge.org/resource/The_Children_of_Húrin>,
+        <https://en.wikipedia.org/wiki/The_Children_of_Húrin> .
+
+ex:The_Hobbit owl:sameAs <http://dbpedia.org/resource/The_Hobbit>,
+        <http://yago-knowledge.org/resource/The_Hobbit>,
+        <https://en.wikipedia.org/wiki/The_Hobbit> .
+
+ex:The_Hobbit%3A_An_Unexpected_Journey owl:sameAs <http://dbpedia.org/resource/The_Hobbit:_An_Unexpected_Journey>,
+        <http://yago-knowledge.org/resource/The_Hobbit:_An_Unexpected_Journey>,
+        <https://en.wikipedia.org/wiki/The_Hobbit:_An_Unexpected_Journey> .
+
+ex:The_Lord_of_the_Rings owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings>,
+        <http://yago-knowledge.org/resource/The_Lord_of_the_Rings>,
+        <https://en.wikipedia.org/wiki/The_Lord_of_the_Rings> .
+
+ex:The_Lord_of_the_Rings%3A_The_Fellowship_of_the_Ring owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring>,
+        <http://yago-knowledge.org/resource/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring>,
+        <https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring> .
+
+ex:The_Lord_of_the_Rings%3A_The_Return_of_the_King owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings:_The_Return_of_the_King>,
+        <http://yago-knowledge.org/resource/The_Lord_of_the_Rings:_The_Return_of_the_King>,
+        <https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King> .
+
+ex:The_Lord_of_the_Rings%3A_The_Two_Towers owl:sameAs <http://dbpedia.org/resource/The_Lord_of_the_Rings:_The_Two_Towers>,
+        <http://yago-knowledge.org/resource/The_Lord_of_the_Rings:_The_Two_Towers>,
+        <https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers> .
+
+ex:The_Silmarillion owl:sameAs <http://dbpedia.org/resource/The_Silmarillion>,
+        <http://yago-knowledge.org/resource/The_Silmarillion>,
+        <https://en.wikipedia.org/wiki/The_Silmarillion> .
+
+ex:Unfinished_Tales owl:sameAs <http://dbpedia.org/resource/Unfinished_Tales>,
+        <http://yago-knowledge.org/resource/Unfinished_Tales>,
+        <https://en.wikipedia.org/wiki/Unfinished_Tales> .
+
