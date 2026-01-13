@@ -79,3 +79,22 @@ ex:LiteraryWorkShape
         sh:path ex:language ;
         sh:datatype xsd:string ;
     ] .
+ex:FilmAdaptationShape
+    a sh:NodeShape ;
+    sh:targetClass ex:FilmAdaptation ;
+
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:path ex:budget ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path ex:publicationDate ;
+        sh:datatype xsd:string ;
+    ] .
