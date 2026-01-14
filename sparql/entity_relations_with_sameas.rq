@@ -1,0 +1,18 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX ex:   <http://example.org/tolkien/>
+
+SELECT DISTINCT ?direction ?subject ?predicate ?object
+WHERE {
+  {
+    ex:Elijah_Wood (owl:sameAs|^owl:sameAs)* ?subject .
+    ?subject ?predicate ?object .
+    BIND("outgoing" AS ?direction)
+  }
+  UNION
+  {
+    ?object ?predicate ?subject .
+    ?subject (owl:sameAs|^owl:sameAs)* ex:Elijah_Wood .
+    BIND("incoming" AS ?direction)
+  }
+}
