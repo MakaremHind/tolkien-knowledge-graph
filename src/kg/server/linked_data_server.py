@@ -10,8 +10,8 @@ import html
 # Config
 # =========================
 
-FUSEKI_QUERY_URL = "http://localhost:3030/tolkien/query"   # works with your UI
-FUSEKI_SPARQL_URL = "http://localhost:3030/tolkien/sparql" # optional fallback
+FUSEKI_QUERY_URL = "http://localhost:3030/tolkien/query" 
+FUSEKI_SPARQL_URL = "http://localhost:3030/tolkien/sparql"
 ENTITY_BASE = "http://example.org/tolkien/"
 
 app = Flask(__name__)
@@ -20,9 +20,7 @@ app = Flask(__name__)
 # SPARQL queries
 # =========================
 
-# NOTE:
-# We do NOT use .format() with SPARQL braces anymore to avoid KeyError.
-# We use a placeholder token and .replace().
+
 
 CONSTRUCT_DESCRIPTION = """
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -397,7 +395,7 @@ def home():
 
 @app.get("/id/<path:name>")
 def id_redirect(name: str):
-    # 303 "See Other": best practice for redirecting from identifier to representation
+    # 303 "See Other": for redirecting from identifier to representation
     name = unquote(name)
     return redirect("/resource/" + quote(name, safe=""), code=303)
 
